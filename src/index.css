@@ -1,6 +1,7 @@
 :root {
 	--bg: #1d1d1d;
-	--bg-dark: #0f0f0f;
+	--bg-box: #0f0f0f;
+	--box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
 	--text: lightgray;
 	--accent: #7E5C8D;
 	--accent-dark: #594263;
@@ -17,8 +18,18 @@ body {
 }
 
 header {
-	background-color: var(--bg-dark);
-	text-align: center;
+	color:var(--text);
+	background-color: var(--bg-box);
+	box-shadow: var(--box-shadow);
+	border-radius: 6px;
+	font-family: Consolas,monaco,monospace; 
+	font-size: 16px;
+	display: flex;
+	flex-flow: row no-wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+	transition: transform 250ms, background-color 500ms, box-shadow 500ms;
 }
 
 .accent {
