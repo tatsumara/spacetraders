@@ -31,6 +31,9 @@ header {
 	padding: 0 20px;
 	transition: transform 250ms, background-color 500ms, box-shadow 500ms;
 }
+header:hover {
+	transform: translateY(-5px);
+}
 
 .accent {
 	color: var(--accent)
