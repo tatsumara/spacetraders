@@ -8,6 +8,9 @@
 
 body {
 	background-color: var(--bg);
+	max-width: 1080px;
+	padding: 10px 10px;
+	margin: auto;
 	color: var(--text);
 	font-family: Consolas,monaco,monospace; 
 	font-size: 16px;
