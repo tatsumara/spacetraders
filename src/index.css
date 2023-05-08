@@ -1,0 +1,28 @@
+:root {
+	--bg: #1d1d1d;
+	--bg-dark: #0f0f0f;
+	--text: lightgray;
+	--accent: #7E5C8D;
+	--accent-dark: #594263;
+}
+
+body {
+	background-color: var(--bg);
+	color: var(--text);
+	font-family: Consolas,monaco,monospace; 
+	font-size: 16px;
+}
+
+header {
+	background-color: var(--bg-dark);
+	text-align: center;
+}
+
+.accent {
+	color: var(--accent)
+}
+
+span:hover {
+	color: var(--accent-dark);
+	transition: color 300ms;
+}
