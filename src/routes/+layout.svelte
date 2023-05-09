@@ -4,7 +4,9 @@
 </script>
 
 <header>
-	<h1><span class="accent">spacetraders.io</span> - Welcome, Captain <span class="accent" title="{data.id}">{data.title}</span></h1>
+	<h1>spacetraders.io</h1>
+	<p>welcome, captain <span class="accent">{data.title.toLowerCase()}</span></p>
+	<button>Logout</button>
 </header>
 
 <slot />

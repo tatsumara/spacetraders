@@ -18,28 +18,58 @@ body {
 }
 
 header {
-	color:var(--text);
 	background-color: var(--bg-box);
+	color: var(--text);
 	box-shadow: var(--box-shadow);
 	border-radius: 6px;
-	font-family: Consolas,monaco,monospace; 
-	font-size: 16px;
 	display: flex;
 	flex-flow: row no-wrap;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 20px;
-	transition: transform 250ms, background-color 500ms, box-shadow 500ms;
 }
-header:hover {
-	transform: translateY(-5px);
+
+h1 {
+	color: var(--accent)
+}
+
+h2 {
+	text-align: center;
+}
+
+button {
+	color: var(--text);
+	box-shadow: var(--box-shadow);
+	cursor: pointer;
+	background-color: var(--bg);
+	border: none;
+	border-radius: 6px;
+}
+button:hover {
+	background-color: var(--accent);
+}
+
+.box-container {
+	margin-top: 10px;
+	display: grid;
+	grid-gap: 10px 10px;
+	grid-template-columns: auto auto;
+}
+@media screen and (max-width: 650px) {
+	.box-container {
+		grid-template-columns: auto !important;
+	}
+}
+.box {
+	background-color: var(--bg-box);
+	color: var(--text);
+	font-family: Consolas,monaco,monospace; 
+	box-shadow: var(--box-shadow);
+	border-radius: 6px;
+	padding: 20px;
+	text-align: center;
 }
 
 .accent {
 	color: var(--accent)
-}
-
-span:hover {
-	color: var(--accent-dark);
-	transition: color 300ms;
 }
